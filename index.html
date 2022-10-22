@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="cardOne" id="ratingCard">
+        <div class="cardOne__starBlock">
+          <div class="cardOne__star">
+            <img src="./assets/images/icon-star.svg" alt="star" />
+          </div>
+        </div>
+
+        <h2 class="cardOne__title">How did we do?</h2>
+
+        <p class="cardOne__description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="cardOne__rating" id="selectRating">
+          <p class="cardOne__rating__element">1</p>
+          <p class="cardOne__rating__element">2</p>
+          <p class="cardOne__rating__element">3</p>
+          <p class="cardOne__rating__element">4</p>
+          <p class="cardOne__rating__element">5</p>
+        </div>
+
+        <button class="cardOne__button" id="submitBtn">SUBMIT</button>
+      </div>
+      <div class="cardTwo" id="thankyouCard">
+        <img
+          class="cardTwo__img"
+          src="./assets/images/illustration-thank-you.svg"
+          alt="thankyou-illustration"
+        />
+        <p class="cardTwo__selection">
+          You selected <span id="ratedStars">4</span> out of 5
+        </p>
+        <h2 class="cardTwo__title">Thank you!</h2>
+        <p class="cardTwo__note">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

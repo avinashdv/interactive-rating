@@ -1,0 +1,177 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  // Desktop
+  @media only screen and (min-width: 426px) {
+    padding: 0px;
+  }
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.cardOne {
+  width: 300px;
+  height: auto;
+  border-radius: 24px;
+  background-image: radial-gradient(
+    farthest-corner at 50% 0%,
+    #202831,
+    #212932,
+    #1e2530,
+    #1b232e,
+    #1a222d,
+    #171e27
+  );
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: hsl(0, 0%, 100%);
+
+  &__starBlock {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__star {
+    background-color: hsl(213, 19%, 18%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &__title {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    font-size: 0.8em;
+    color: hsl(216, 12%, 54%);
+    margin-bottom: 20px;
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &__element {
+      width: 45px;
+      height: 45px;
+      font-weight: 700;
+      border-radius: 50%;
+      background-color: hsl(213, 19%, 18%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: hsl(216, 12%, 54%);
+      cursor: pointer;
+
+      &:focus {
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+      }
+
+      &:hover {
+        background-color: hsl(217, 12%, 63%);
+        color: hsl(0, 0%, 100%);
+      }
+    }
+
+    &__active {
+      background-color: hsl(25, 97%, 53%);
+      color: hsl(0, 0%, 100%);
+    }
+  }
+  &__button {
+    font-family: "Overpass", sans-serif;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    border: 0;
+    letter-spacing: 1px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: hsl(0, 0%, 100%);
+      color: hsl(25, 97%, 53%);
+    }
+  }
+}
+
+.cardTwo {
+  width: 300px;
+  height: auto;
+  border-radius: 24px;
+  background-image: radial-gradient(
+    farthest-corner at 50% 0%,
+    #202831,
+    #212932,
+    #1e2530,
+    #1b232e,
+    #1a222d,
+    #171e27
+  );
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+
+  &__img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  &__selection {
+    background-color: hsl(213deg, 19%, 18%);
+    padding: 6px 12px;
+    font-size: 0.8em;
+    border-radius: 25px;
+    margin: 0;
+    line-height: 16px;
+    margin-bottom: 28px;
+    color: hsl(25, 97%, 53%);
+  }
+
+  &__title {
+    font-size: 1.4em;
+    margin-bottom: 14px;
+    letter-spacing: 0.7px;
+  }
+
+  &__note {
+    font-size: 0.8em;
+    text-align: center;
+    color: hsl(216, 12%, 54%);
+    font-weight: 700;
+    line-height: 22px;
+    word-spacing: 1px;
+  }
+}
