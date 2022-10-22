@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // event delegation
   if (ratingParent && submitBtn) {
     ratingParent.addEventListener("click", (event) => {
+      if (event.target.id) {
+        return;
+      }
       rated = event.target.innerText;
       ratedStars.innerHTML = rated;
 
@@ -30,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //   to display the thankyou card
       event.target.classList.add("cardOne__rating__active");
       event.target.style.pointerEvents = "none";
+      submitBtn.disabled = false;
     });
 
     submitBtn.addEventListener("click", (event) => {
